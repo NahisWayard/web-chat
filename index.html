@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="master.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <title>Web chat</title>
+</head>
+
+<body>
+    <div class="main">
+        <div>
+            <input type="text" id="console" autofocus="true">
+            <input type="button" id="submit" value="Send">
+            <select id="room" name="room">
+            </select>
+            <input type="button" id="createRoom" value="Create New Room">
+        </div>
+        <div id="chat">
+        </div>
+    </div>
+
+    <div id="lateral">
+        <h1>Room list</h1>
+        <div id="divRoomList">
+            <ul id="roomList">
+            </ul>
+        </div>
+        <h1>User list</h1>
+        <div id="divUserList">
+            <ul id="userList">
+            </ul>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="errors.js"></script>
+<script type="text/javascript" src="index.js"></script>
+
+</html>
