@@ -11,9 +11,9 @@ module.exports = {
   }],
 
   deploy : {
-    production : {
-      user : 'NahisWayard',
-      host : '212.83.163.1',
+    prod : {
+      user : 'deployer',
+      host : 'localhost',
       ref  : 'origin/master',
       repo : 'git@github.com:NahisWayard/web-chat.git',
       path : '/var/www/production',
