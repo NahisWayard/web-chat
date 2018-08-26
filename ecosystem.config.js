@@ -12,7 +12,7 @@ module.exports = {
 
   deploy : {
     prod : {
-      user : 'root',
+      user : 'deployer',
       host : ['nahis-wayard.fr'],
       ref  : 'origin/master',
       repo : 'git@github.com:NahisWayard/web-chat.git',
