@@ -16,7 +16,7 @@ module.exports = {
       host : ['nahis-wayard.fr'],
       ref  : 'origin/master',
       repo : 'git@github.com:NahisWayard/web-chat.git',
-      path : '~/web-chat',
+      path : '/home/deployer/web-chat',
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
     }
   }
