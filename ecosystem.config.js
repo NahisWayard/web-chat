@@ -12,12 +12,12 @@ module.exports = {
 
   deploy : {
     prod : {
-      user : 'deployer',
-      host : 'localhost',
+      user : 'root',
+      host : ['nahis-wayard.fr'],
       ref  : 'origin/master',
       repo : 'git@github.com:NahisWayard/web-chat.git',
-      path : '/var/www/production',
-      'post-deploy' : 'NODE_ENV=\'production\' && npm install && pm2 reload ecosystem.config.js'
+      path : '/var/www/web-chat',
+      'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
     }
   }
 };
