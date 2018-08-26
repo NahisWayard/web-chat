@@ -17,7 +17,7 @@ module.exports = {
       ref  : 'origin/master',
       repo : 'git@github.com:NahisWayard/web-chat.git',
       path : '/home/deployer/web-chat',
-      'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
+      'post-deploy' : 'npm install && pm2 reload web-chat --env production'
     }
   }
 };
